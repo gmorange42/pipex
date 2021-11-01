@@ -6,7 +6,7 @@
 /*   By: gmorange <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/29 13:31:21 by gmorange          #+#    #+#             */
-/*   Updated: 2021/10/18 16:32:03 by gmorange         ###   ########.fr       */
+/*   Updated: 2021/11/01 10:37:31 by gmorange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	first_cmd(t_all *all, char **envp)
 {
-	creat_pipes(all, 0);
+	create_pipes(all, 0);
 	all->pid[0] = fork();
 	if (all->pid[0] == -1)
 		destroy_all(all);
@@ -42,7 +42,7 @@ void	middle_cmd(t_all *all, char **envp, int i)
 {
 	if (all->pid[i - 1] != 0)
 	{
-		creat_pipes(all, i);
+		create_pipes(all, i);
 		all->pid[i] = fork();
 		if (all->pid[i] == -1)
 			destroy_all(all);

@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   creat_pipes.c                                      :+:      :+:    :+:   */
+/*   create_pipes.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gmorange <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 14:27:05 by gmorange          #+#    #+#             */
-/*   Updated: 2021/10/18 14:29:32 by gmorange         ###   ########.fr       */
+/*   Updated: 2021/11/01 10:36:50 by gmorange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../header/pipex.h"
 
-void	creat_pipes(t_all *all, int i)
+void	create_pipes(t_all *all, int i)
 {
 	if (pipe(all->pipefd[i]) == -1)
 		destroy_all(all);

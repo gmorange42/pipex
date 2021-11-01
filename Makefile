@@ -6,7 +6,7 @@
 #    By: gmorange <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/13 13:38:06 by gmorange          #+#    #+#              #
-#    Updated: 2021/10/18 17:06:05 by gmorange         ###   ########.fr        #
+#    Updated: 2021/11/01 10:35:32 by gmorange         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ SRCS=./srcs/main.c \
 	 ./srcs/stock_path.c \
 	 ./srcs/destroy.c \
 	 ./srcs/check_and_stock_cmds.c \
-	 ./srcs/creat_pipes.c \
+	 ./srcs/create_pipes.c \
 	 ./srcs/pipe.c \
 	 ./srcs/init.c \
 	 ./srcs/limiter.c

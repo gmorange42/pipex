@@ -6,7 +6,7 @@
 /*   By: gmorange <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/13 13:28:03 by gmorange          #+#    #+#             */
-/*   Updated: 2021/10/18 13:37:41 by gmorange         ###   ########.fr       */
+/*   Updated: 2021/11/01 10:35:55 by gmorange         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ void	free_tab_path(t_all *all);
 void	free_tab_cmd(t_all *all);
 int		is_it_cmd(t_all *all, char *cmd, int index);
 void	check_and_stock_cmds(t_all *all, int ac, char **av);
-void	creat_pipes(t_all *all, int i);
+void	create_pipes(t_all *all, int i);
 void	malloc_pipefd_pid(t_all *all);
 void	init(t_all *all, int ac);
 void	first_cmd(t_all *all, char **envp);
